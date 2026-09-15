@@ -752,6 +752,7 @@ blockquote.quote-large {
 </p><p id="3d80d34b-58d3-807b-9e6e-c13c5ae2b0dc" class="" dir="auto" style="text-align: center;">🙂 <strong>AI 비즈솔루션팀이 준비한 개인 AI 위키 사용 가이드라인은 여기까지입니다.</strong> 🙂</p><p id="3d80d34b-58d3-8082-b111-e108bd9fd4c4" class="" dir="auto" style="text-align: center;">사용 중 문제가 생기거나, AI 위키와 관련해 궁금한 점이 생기면 AI 비즈솔루션팀으로 연락 주시기 바랍니다.</p><p id="3d80d34b-58d3-8019-a538-c3ce8940fedb" class="" dir="auto "style="text-align: center;">감사합니다.</p></div></article><script>
 const tocLinks=[...document.querySelectorAll('.guide-toc a')];
 const tocSections=tocLinks.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+const tocSections=tocLinks.map(a=>document.getElementById(a.getAttribute('href').slice(1))).filter(Boolean);
 if (tocLinks.length) {
   const initial = location.hash ? tocLinks.find(a=>a.getAttribute('href')===location.hash) : tocLinks[0];
   if (initial) initial.classList.add('active');
