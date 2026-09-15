@@ -8,7 +8,6 @@ html {
 	box-sizing: border-box;
 	-webkit-print-color-adjust: exact;
 }
-
 html,
 body {
 	margin: 0;
@@ -21,23 +20,19 @@ body {
 		color: rgb(55, 53, 47);
 	}
 }
-
 body {
 	line-height: 1.5;
 	white-space: pre-wrap;
 }
-
 a,
 a.visited {
 	color: inherit;
 	text-decoration: underline;
 }
-
 .pdf-relative-link-path {
 	font-size: 80%;
 	color: #444;
 }
-
 h1,
 h2,
 h3 {
@@ -46,58 +41,48 @@ h3 {
 	font-weight: 600;
 	margin-bottom: 0;
 }
-
 /* Override strong tags inside headings to maintain consistent weight */
 h1 strong,
 h2 strong,
 h3 strong {
 	font-weight: 600;
 }
-
 .page-title {
 	font-size: 2.5rem;
 	font-weight: 700;
 	margin-top: 0;
 	margin-bottom: 0.75em;
 }
-
 h1 {
 	font-size: 1.875rem;
 	margin-top: 1.875rem;
 }
-
 h2 {
 	font-size: 1.5rem;
 	margin-top: 1.5rem;
 }
-
 h3 {
 	font-size: 1.25rem;
 	margin-top: 1.25rem;
 }
-
 .source {
 	border: 1px solid #ddd;
 	border-radius: 3px;
 	padding: 1.5em;
 	word-break: break-all;
 }
-
 .callout {
 	border-radius: 10px;
 	padding: 1rem;
 }
-
 /* For default-background callouts, render the border outline. */
 .callout.block-color-default_background {
 	border: 1px solid rgba(55, 53, 47, 0.09);
 }
-
 figure {
 	margin: 1.25em 0;
 	page-break-inside: avoid;
 }
-
 /*
  * Toggles and callouts hold arbitrary content, so they can easily be taller
  * than a page. They must stay breakable: avoiding breaks inside them makes
@@ -108,13 +93,11 @@ details,
 aside {
 	margin: 1.25em 0;
 }
-
 /* Keep a toggle's title on the same page as the start of its content. */
 summary {
 	page-break-after: avoid;
 	break-after: avoid;
 }
-
 /*
  * Toggle headings render as <h1/h2/h3 style="display:inline-block"> inside
  * <summary>. Without this reset, the heading's margin-top pushes it below the
@@ -126,21 +109,17 @@ summary h3,
 summary h4 {
 	margin-top: 0;
 }
-
 figcaption {
 	opacity: 0.5;
 	font-size: 85%;
 	margin-top: 0.5em;
 }
-
 mark {
 	background-color: transparent;
 }
-
 .indented {
 	padding-left: 1.5em;
 }
-
 hr {
 	background: transparent;
 	display: block;
@@ -150,70 +129,56 @@ hr {
 	border: none;
 	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
 }
-
 img {
 	max-width: 100%;
 }
-
 @media only print {
 	img {
 		max-height: 100vh;
 		object-fit: contain;
 	}
-
 	table.collection-content {
 		width: 100%;
 		table-layout: fixed;
 	}
-
 	table.collection-content th,
 	table.collection-content td {
 		overflow-wrap: anywhere;
 	}
-
 	table.collection-content td > .user,
 	table.collection-content td > time {
 		white-space: pre-wrap;
 	}
 }
-
 @page {
 	margin: 1in;
 }
-
 .collection-content-wrapper {
 	overflow-x: auto;
 }
-
 @media only print {
 	.collection-content-wrapper {
 		overflow-x: visible;
 	}
 }
-
 .collection-content {
 	font-size: 0.875rem;
 }
-
 .collection-content td {
 	white-space: pre-wrap;
 	word-break: break-word;
 }
-
 .column-list {
 	display: flex;
 	gap: 46px;
 }
-
 .column {
 	min-width: 0;
 	overflow: hidden;
 }
-
 .column > *:first-child {
 	margin-top: 0;
 }
-
 .table_of_contents-item {
 	display: block;
 	font-size: 0.875rem;
@@ -221,37 +186,30 @@ img {
 	padding-inline: 0.125rem;
 	padding-block: 0.375rem;
 }
-
 .table_of_contents-indent-1 {
 	margin-left: 1.5rem;
 }
-
 .table_of_contents-indent-2 {
 	margin-left: 3rem;
 }
-
 .table_of_contents-indent-3 {
 	margin-left: 4.5rem;
 }
-
 .table_of_contents-link {
 	text-decoration: none;
 	opacity: 0.7;
 	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
 }
-
 table,
 th,
 td {
 	border: 1px solid rgba(55, 53, 47, 0.09);
 }
-
 table {
 	border-collapse: collapse;
 	border-left: none;
 	border-right: none;
 }
-
 th,
 td {
 	font-weight: normal;
@@ -260,90 +218,70 @@ td {
 	min-height: 1.5em;
 	text-align: left;
 }
-
 th {
 	color: rgba(55, 53, 47, 0.6);
 }
-
 ol,
 ul {
 	margin: 0;
 	margin-block-start: 0.6em;
 	margin-block-end: 0.6em;
 }
-
 li > ol:first-child,
 li > ul:first-child {
 	margin-block-start: 0.6em;
 }
-
 ul > li {
 	list-style: disc;
 }
-
 ul.to-do-list {
 	padding-inline-start: 0;
 }
-
 ul.to-do-list > li {
 	list-style: none;
 }
-
 .to-do-children-checked {
 	text-decoration: line-through;
 	opacity: 0.375;
 }
-
 ul.toggle > li {
 	list-style: none;
 }
-
 ul {
 	padding-inline-start: 1.7em;
 }
-
 ul > li {
 	padding-left: 0.1em;
 }
-
 ol {
 	padding-inline-start: 1.6em;
 }
-
 ol.numbered-list.numbered-list-digits-2 {
 	padding-inline-start: 2em;
 }
-
 ol.numbered-list.numbered-list-digits-3plus {
 	padding-inline-start: 2.4em;
 }
-
 ol > li {
 	padding-left: 0.2em;
 }
-
 .mono ol {
 	padding-inline-start: 2em;
 }
-
 .mono ol > li {
 	text-indent: -0.4em;
 }
-
 .toggle {
 	padding-inline-start: 0em;
 	list-style-type: none;
 }
-
 /* Indent toggle children */
 .toggle > li > details {
 	padding-left: 1.7em;
 }
-
 .toggle > li > details > summary {
 	margin-left: -1.1em;
 }
-
 .selected-value {
 	display: inline-block;
 	padding: 0 0.5em;
@@ -354,16 +292,13 @@ ol > li {
 	margin-bottom: 0.3em;
 	white-space: nowrap;
 }
-
 .collection-title {
 	display: inline-block;
 	margin-right: 1em;
 }
-
 .page-description {
 	margin-bottom: 2em;
 }
-
 .simple-table {
 	margin-top: 1em;
 	font-size: 0.875rem;
@@ -373,12 +308,10 @@ ol > li {
 	height: 29px;
 	min-width: 120px;
 }
-
 .simple-table th {
 	height: 29px;
 	min-width: 120px;
 }
-
 .simple-table-header-color {
 	background: rgb(247, 246, 243);
 	color: black;
@@ -386,11 +319,9 @@ ol > li {
 .simple-table-header {
 	font-weight: 500;
 }
-
 time {
 	opacity: 0.5;
 }
-
 .icon {
 	display: inline-flex;
 	align-items: center;
@@ -401,7 +332,6 @@ time {
 	vertical-align: text-bottom;
 	margin-right: 0.5em;
 }
-
 /*
  * Render emoji icons using a ::before pseudo-element to keep the glyph
  * out of the DOM textContent traversal. This avoids double-rendering icons
@@ -412,89 +342,72 @@ time {
 .icon[data-emoji]::before {
 	content: attr(data-emoji);
 }
-
 img.icon {
 	border-radius: 3px;
 }
-
 .callout img.notion-static-icon {
 	width: 1em;
 	height: 1em;
 }
-
 .callout p {
 	margin: 0;
 }
-
 .callout h1,
 .callout h2,
 .callout h3 {
 	margin: 0 0 0.6rem;
 }
-
 .user-icon {
 	width: 1.5em;
 	height: 1.5em;
 	border-radius: 100%;
 	margin-right: 0.5rem;
 }
-
 .user-icon-inner {
 	font-size: 0.8em;
 }
-
 .text-icon {
 	border: 1px solid #000;
 	text-align: center;
 }
-
 .page-cover-image {
 	display: block;
 	object-fit: cover;
 	width: 100%;
 	max-height: 30vh;
 }
-
 .page-header-icon {
 	font-size: 3rem;
 	margin-bottom: 1rem;
 }
-
 .page-header-icon-with-cover {
 	margin-top: -0.72em;
 	margin-left: 0.07em;
 }
-
 .page-header-icon img {
 	border-radius: 3px;
 }
-
 .link-to-page {
 	margin: 1em 0;
 	padding: 0;
 	border: none;
 	font-weight: 500;
 }
-
 p > .user {
 	opacity: 0.5;
 }
-
 td > .user,
 td > time {
 	white-space: nowrap;
 }
-
 input[type="checkbox"] {
 	margin-right: 0.4em;
 	vertical-align: middle;
 }
-
 p {
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 }
-
 .image {
 	border: none;
 	margin: 1.5em 0;
@@ -502,7 +415,6 @@ p {
 	border-radius: 0;
 	text-align: center;
 }
-
 .code,
 code {
 	background: rgba(135, 131, 120, 0.15);
@@ -512,38 +424,31 @@ code {
 	font-size: 85%;
 	tab-size: 2;
 }
-
 code {
 	color: #eb5757;
 }
-
 .code {
 	padding: 1.5em 1em;
 }
-
 .code-wrap {
 	white-space: pre-wrap;
 	word-break: break-all;
 }
-
 .code > code {
 	background: none;
 	padding: 0;
 	font-size: 100%;
 	color: inherit;
 }
-
 blockquote {
 	font-size: 1em;
 	margin: 1em 0;
 	padding-left: 1em;
 	border-left: 3px solid rgb(55, 53, 47);
 }
-
 blockquote.quote-large {
 	font-size: 1.25em;
 }
-
 .bookmark {
 	text-decoration: none;
 	max-height: 8em;
@@ -552,7 +457,6 @@ blockquote.quote-large {
 	width: 100%;
 	align-items: stretch;
 }
-
 .bookmark-title {
 	font-size: 0.85em;
 	overflow: hidden;
@@ -560,12 +464,10 @@ blockquote.quote-large {
 	height: 1.75em;
 	white-space: nowrap;
 }
-
 .bookmark-text {
 	display: flex;
 	flex-direction: column;
 }
-
 .bookmark-info {
 	flex: 4 1 180px;
 	padding: 12px 14px 14px;
@@ -573,7 +475,6 @@ blockquote.quote-large {
 	flex-direction: column;
 	justify-content: space-between;
 }
-
 .bookmark-image {
 	width: 33%;
 	flex: 1 1 180px;
@@ -582,7 +483,6 @@ blockquote.quote-large {
 	object-fit: cover;
 	border-radius: 1px;
 }
-
 .bookmark-description {
 	color: rgba(55, 53, 47, 0.6);
 	font-size: 0.75em;
@@ -590,18 +490,15 @@ blockquote.quote-large {
 	max-height: 4.5em;
 	word-break: break-word;
 }
-
 .bookmark-href {
 	font-size: 0.75em;
 	margin-top: 0.25em;
 }
-
 .tab {
 	margin: 1.25em 0;
 	padding-inline: 1rem;
 	border: 1px solid rgba(55, 53, 47, 0.09);
 }
-
 .sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
 .code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
 .serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
@@ -772,7 +669,6 @@ blockquote.quote-large {
 .select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
 .select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
 .select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
-
 .checkbox {
 	display: inline-flex;
 	vertical-align: text-bottom;
@@ -782,11 +678,9 @@ blockquote.quote-large {
 	margin-left: 2px;
 	margin-right: 5px;
 }
-
 .checkbox-on {
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
 }
-
 .checkbox-off {
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 }
@@ -814,7 +708,6 @@ blockquote.quote-large {
 이름은 &#x27;[내 서재]&#x27;로 하고, 다른 프로젝트에서도 이 이름으로 기록하거나 찾아달라고 할 수 있게 연결해줘.
 내 자료를 보관할 비공개 백업도 연결하고, 준비되면 어떻게 사용하면 되는지 알려줘.</code></pre><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="💡" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="3d80d34b-58d3-805b-a5ee-cd0765e9ac78" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="💡"></span></div><div style="width:100%"><p id="3d80d34b-58d3-8002-81f4-e2db2b8ee296" class="" dir="auto"><mark class="highlight-orange" data-notion-highlight="orange">‘내 서재’ 대신 원하는 이름을 자유롭게 붙이셔도 됩니다.</mark></p></div></aside><ul id="3db0d34b-58d3-80cf-9903-f7a9d21d1a9e" class="bulleted-list" dir="auto"><li style="list-style-type:disc">에이전트가 GitLab 로그인을 요청하면 위에서 사용한 사내 계정으로 동일하게 인크로스 SSO 로그인을 진행해 주세요. 혹시 로그인 페이지가 열리지 않는다면 채팅으로 에이전트에게 요청하세요.</li></ul><ul id="3d80d34b-58d3-8091-b07d-d7fc165192d9" class="bulleted-list" dir="auto"><li style="list-style-type:disc">설치 환경에 따라서 에이전트가 프로그램 설치를 요청할 수도 있어요. 에이전트의 지시에 따라 설치하고, 설치가 어렵다면 에이전트에게<em> ‘설치 방법을 단계별로 알려줘’ </em>라고 요청해 보세요.</li></ul><p id="3d80d34b-58d3-80a1-a8e8-ff169e426128" class="" dir="auto">
 </p><h2 id="3d80d34b-58d3-8062-b33c-f9938d3eea5d" class="" dir="auto">2. 운영 규칙</h2><p id="3d80d34b-58d3-8052-bde8-d5bae9d1ecb6" class="" dir="auto"><strong>위키 운영 시 반드시 지키도록 하고 싶은 규칙이 있나요?</strong></p><ul id="3d80d34b-58d3-803d-93c0-d4ed2d5cb46b" class="bulleted-list" dir="auto"><li style="list-style-type:disc">설치 직후 첫 프롬프트로 운영 규칙을 저장하도록 명령해 보세요.</li></ul><ul id="3d80d34b-58d3-8044-a9a8-f9e0b18d5a2a" class="bulleted-list" dir="auto"><li style="list-style-type:disc">이후 위키는 더 이상 규칙을 일일히 입력하지 않아도, 정해진 규칙에 따라 움직입니다.</li></ul><ul id="3d80d34b-58d3-8042-975f-d221c2284be2" class="bulleted-list" dir="auto"><li style="list-style-type:disc">아래 템플릿을 활용해도 좋고, 별도로 원하는 규칙이 있다면 추가로 입력해도 좋습니다.</li></ul><pre id="3d60d34b-58d3-80c4-bcb6-ff51f85b15e2" class="code code-wrap" data-notion-code-syntax="jsx"><code class="language-jsx" style="white-space:pre-wrap;word-break:break-all">이 위키의 운영 규칙을 기억해 줘.
-
 - 기존 자료를 먼저 검색한다.
 - 원본은 raw에 그대로 보존한다.
 - 정리 문서는 내용에 맞는 wiki 폴더에 저장한다.
@@ -823,25 +716,19 @@ blockquote.quote-large {
 - 삭제나 큰 수정은 미리 보여주고 확인받는다.
 - 작업 후 변경 파일과 위치를 알려 준다.</code></pre><p id="3d80d34b-58d3-8067-a669-cadbf9e7497b" class="" dir="auto">
 </p><h2 id="3d60d34b-58d3-80f7-ab70-ef9e2460a3b3" class="" dir="auto">3. 파일을 추가/수정/삭제하는 경우</h2><p id="3d80d34b-58d3-806b-a421-cfb7b7d43e83" class="" dir="auto"><strong>이제 본격적으로 AI 위키를 사용해 보겠습니다.</strong></p><ul id="3d80d34b-58d3-8072-b698-cbb0a4c0cf54" class="bulleted-list" dir="auto"><li style="list-style-type:disc">위키에 저장하고 싶은 문서를 준비해 주세요.<p id="3d80d34b-58d3-806e-b6fa-e3ceb00279f0" class="" dir="auto">pdf, word, excel, 이미지 등 내 폴더에 저장할 수 있는 형식이면 무엇이든 좋습니다.</p></li></ul><ul id="3d80d34b-58d3-80ae-a97b-cec070a6f108" class="bulleted-list" dir="auto"><li style="list-style-type:disc">채팅에 문서를 추가하고, 문서에 관한 간략한 설명과 함께 다음과 같이 저장을 요청하세요.<p id="3d80d34b-58d3-80ed-a3b5-ece33895b51a" class="" dir="auto">저장 작업이 완료되면 에이전트가 결과를 알려줍니다.</p><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="💡" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="3d80d34b-58d3-8001-9455-dc9207e97d50" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="💡"></span></div><div style="width:100%"><p id="3d80d34b-58d3-8006-9f01-ca75d60dbe25" class="" dir="auto"><mark class="highlight-orange" data-notion-highlight="orange">원본 문서는 반드시 함께 저장되니 걱정하지 마세요.</mark></p></div></aside></li></ul><pre id="3d60d34b-58d3-80e3-a045-e5d3d73d7d32" class="code code-wrap" data-notion-code-syntax="jsx"><code class="language-jsx" style="white-space:pre-wrap;word-break:break-all">내 서재에 이 파일을 추가해 줘.
-
 제목:
 내용:
 출처:
 관련 프로젝트·부서:
-
 기존 자료와 중복·충돌 여부를 확인하고 저장해 줘.</code></pre><ul id="3d80d34b-58d3-803a-acee-f6017dc541d5" class="bulleted-list" dir="auto"><li style="list-style-type:disc">문서가 아닌 간단한 의견, 또는 메모도 프롬프트에 입력하면 위키에 저장할 수 있어요.<p id="3d80d34b-58d3-8022-acb0-d88a19f6d107" class="" dir="auto">     예) “<em>00 캠페인의 대상에 2030 여성도 추가해 줘.”</em></p><p id="3d80d34b-58d3-8033-8652-c4c50db1d010" class="" dir="auto">
 </p></li></ul><ul id="3d80d34b-58d3-80c7-8fc6-c2ff08195358" class="bulleted-list" dir="auto"><li style="list-style-type:disc">위키에 저장된 문서의 내용을 수정하고 싶은 경우, 수정을 요청해 보세요.<p id="3d80d34b-58d3-8060-acfb-cf5862082780" class="" dir="auto"><strong>단, 원본 문서는 절대 수정되지 않습니다. </strong></p><p id="3d80d34b-58d3-803c-9c98-dc994f2e5209" class="" dir="auto">AI가 직접 작성한 문서 요약본(Markdown)만 수정되는 것입니다.</p></li></ul><pre id="3d60d34b-58d3-80d7-b723-c748fef65077" class="code code-wrap" data-notion-code-syntax="jsx"><code class="language-jsx" style="white-space:pre-wrap;word-break:break-all">내 서재의 `[문서명]`을 수정해 줘.
-
 수정 이유:
 수정할 내용:
 근거:
-
 변경 전·후와 영향받는 문서를 먼저 보여주고, 확인 후 저장해 줘.</code></pre><p id="3d80d34b-58d3-8040-8582-d28c76e0223d" class="" dir="auto">
 </p><ul id="3d80d34b-58d3-8045-b12e-ff0a80b4d7c2" class="bulleted-list" dir="auto"><li style="list-style-type:disc">문서 삭제도 다음과 같이 명령할 수 있습니다.</li></ul><pre id="3d60d34b-58d3-8016-8b52-f281f548bb64" class="code code-wrap" data-notion-code-syntax="jsx"><code class="language-jsx" style="white-space:pre-wrap;word-break:break-all">내 서재의 `[문서명]`를 삭제해 줘.
-
 삭제 이유:
 삭제 범위: [정리본만 / 원본 포함]
-
 관련 링크와 원본 보존 여부를 먼저 확인하고, 삭제 대상 목록을 보여준 뒤 내 확인 후 삭제해 줘.</code></pre><p id="3d80d34b-58d3-8069-91b1-edef564eba53" class="" dir="auto">
 </p><h2 id="3d60d34b-58d3-801f-a97a-d5b61ab6291e" class="" dir="auto">4. 기타 프롬프트 템플릿</h2><ul id="3d60d34b-58d3-80c4-ae25-e83ad5b5824c" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>자료 검색·답변</strong><pre id="3d60d34b-58d3-805e-9c04-d84baeb35366" class="code code-wrap" data-notion-code-syntax="jsx"><code class="language-jsx" style="white-space:pre-wrap;word-break:break-all">내 서재에서 [질문]을 찾아 줘. 근거 문서명과 관련 부분을 함께 보여 줘. 
 자료에 없으면 확인 필요로 표시해 줘.</code></pre></li></ul><ul id="3d60d34b-58d3-80bb-a9f5-d8d87dfec828" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>문서 비교·충돌 확인</strong><pre id="3d60d34b-58d3-8040-9054-ea5ebecaea9a" class="code code-wrap" data-notion-code-syntax="jsx"><code class="language-jsx" style="white-space:pre-wrap;word-break:break-all">[문서 A]와 [문서 B]를 비교해 줘. 
@@ -853,19 +740,21 @@ blockquote.quote-large {
 현재 상태, 주요 자료, 최근 변경사항, 미해결 질문을 한눈에 정리해 줘.</code></pre></li></ul><ul id="3d60d34b-58d3-8054-8578-d0e5f15c29c2" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>위키 점검</strong><pre id="3d60d34b-58d3-8053-a186-d858c36a0fb8" class="code code-wrap" data-notion-code-syntax="jsx"><code class="language-jsx" style="white-space:pre-wrap;word-break:break-all">내 서재에서 출처가 빠진 문서, 끊어진 링크, 중복 내용, 서로 충돌하는 내용을 찾아 줘. 
 수정하지 말고 목록만 보여 줘.</code></pre></li></ul><ul id="3d60d34b-58d3-8034-8d0d-d5806744b0ab" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>공유용 요약</strong><pre id="3d60d34b-58d3-8090-bd78-e45b2042b8e7" class="code code-wrap" data-notion-code-syntax="jsx"><code class="language-jsx" style="white-space:pre-wrap;word-break:break-all">내 서재의 [주제]를 AI를 잘 모르는 직원도 이해할 수 있게 한 페이지로 요약해 줘. 
 전문용어는 풀어서 쓰고 근거 문서명을 표시해 줘.</code></pre></li></ul><ul id="3d60d34b-58d3-8039-a75f-d01055d6f59e" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>레퍼런스 저장</strong><pre id="3d60d34b-58d3-80b4-96f6-e1936337bff3" class="code code-wrap" data-notion-code-syntax="jsx"><code class="language-jsx" style="white-space:pre-wrap;word-break:break-all">내 서재에 이 레퍼런스를 저장해 줘.
-
 출처:
 유형:
 참고할 요소:
 적용 이유:
 그대로 적용하면 안 되는 부분:
 저장 날짜:
-
 중복 여부를 확인하고, 원본은 보존한 뒤 관련 프로젝트 문서와 연결해 줘.</code></pre></li></ul><h2 id="3d60d34b-58d3-8027-b113-f7625e3f9624" class="" dir="auto">부록) 컨플루언스 MCP 연결하기</h2><ul id="3d80d34b-58d3-8009-8149-d157ff4dbf7f" class="bulleted-list" dir="auto"><li style="list-style-type:disc">컨플루언스에 저장된 기존 문서를 위키에 편하게 연결하는 방법을 안내해 드립니다.<p id="3d80d34b-58d3-8090-a4fb-d755d6ef8279" class="" dir="auto">pdf나 word로 수동 내보내기하여 저장하는 방식도 물론 가능하지만, 내보낼 문서가 많다면 MCP 방식을 사용해 보세요.</p></li></ul><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="💡" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="3d80d34b-58d3-80ac-814d-f3de286bd9e8" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="💡"></span></div><div style="width:100%"><p id="3d80d34b-58d3-80ab-9a59-f4140e66a4fc" class="" dir="auto"><mark class="highlight-brown" data-notion-highlight="brown"><strong>MCP란 무엇인가요? :</strong></mark><mark class="highlight-orange" data-notion-highlight="orange"> AI가 다른 프로그램에 접근하여 작동할 수 있도록 하는 연결 규격입니다.</mark></p></div></aside><ul id="3d80d34b-58d3-8019-905f-e5bc519daeb6" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Codex를 사용하는 경우</strong><ul id="3d80d34b-58d3-8042-952a-c7c6162cd613" class="bulleted-list" dir="auto"><li style="list-style-type:circle">‘설정’ - ‘플러그인’에서 ‘Atlassian Rovo’를 검색하여 연결하세요.</li></ul><figure id="3d80d34b-58d3-809e-8afc-f974be085059" class="image" data-notion-image="image%207.png" dir="ltr"><a href="image%207.png"><img style="width:665.96875px" src="image%207.png"/></a></figure><ul id="3d80d34b-58d3-8075-bb3b-cd901dc10c87" class="bulleted-list" dir="auto"><li style="list-style-type:circle">Codex 채팅창으로 돌아가 ‘+’를 클릭하면 플러그인을 연결할 수 있습니다. <p id="3d80d34b-58d3-8031-93a3-d158b06afc74" class="" dir="auto">Atlassian Rovo를 선택한 후 다음과 같은 프롬프트를 입력하세요.<div class="indented"><p id="3d80d34b-58d3-801a-9335-e95cbd33f7c1" class="" dir="auto">예) <em>“00 스페이스의 00 폴더의 00 문서 내용을 [내 서재]에 저장해 줘.”</em></p></div></p></li></ul></li></ul><ul id="3d80d34b-58d3-806d-9413-da9e673a29fe" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Claude Code를 사용하는 경우</strong><ul id="3d80d34b-58d3-807d-8e3b-db2ed5c26f28" class="bulleted-list" dir="auto"><li style="list-style-type:circle">‘사용자 지정’ - ‘커넥터’에서 ‘Atlassian Rovo’를 검색하여 연결하세요.</li></ul><ul id="3d80d34b-58d3-8024-ba2c-ef9cee65e081" class="bulleted-list" dir="auto"><li style="list-style-type:circle">이후 사용 방법은 위와 같습니다.</li></ul></li></ul><p id="3d80d34b-58d3-8093-825f-dae83b99c21b" class="" dir="auto">
 </p><p id="3d80d34b-58d3-806a-bd87-c8e4ae9ecfef" class="" dir="auto">
 </p><p id="3d80d34b-58d3-807b-9e6e-c13c5ae2b0dc" class="" dir="auto" style="text-align: center;">🙂 <strong>AI 비즈솔루션팀이 준비한 개인 AI 위키 사용 가이드라인은 여기까지입니다.</strong> 🙂</p><p id="3d80d34b-58d3-8082-b111-e108bd9fd4c4" class="" dir="auto" style="text-align: center;">사용 중 문제가 생기거나, AI 위키와 관련해 궁금한 점이 생기면 AI 비즈솔루션팀으로 연락 주시기 바랍니다.</p><p id="3d80d34b-58d3-8019-a538-c3ce8940fedb" class="" dir="auto "style="text-align: center;">감사합니다.</p></div></article><script>
 const tocLinks=[...document.querySelectorAll('.guide-toc a')];
 const tocSections=tocLinks.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+if (tocLinks.length) {
+  const initial = location.hash ? tocLinks.find(a=>a.getAttribute('href')===location.hash) : tocLinks[0];
+  if (initial) initial.classList.add('active');
+}
 const tocObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
   if(entry.isIntersecting) tocLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+entry.target.id));
 }),{rootMargin:'-20% 0px -65%'});
